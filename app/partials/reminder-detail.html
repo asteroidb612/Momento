@@ -1,0 +1,29 @@
+
+<div class="container">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="page-header">
+      <h1 ><span class="glyphicon glyphicon-align-justify"></span> {{reminder.name}}</h1>
+      <form ng-submit="updateForm()">
+        <div id="name-group" class="form-group"> 
+          <label>Remind me to</label>
+          <input type="text" name="text" class="form-control" ng-model="reminder.name">
+        </div>
+        <div id="name-group" class="form-group"> 
+          <label>Starting</label>
+          <input type="date" name="next" class="form-control" ng-model="reminder.next">
+        </div>
+        <div id="name-group" class="form-group"> 
+          <label>Repeating every </label> 
+          <input type="number" name="delta" class="form-control" ng-model="reminder.delta">
+        </div> 
+        <div id="name-group" class="form-group"> 
+          <label>Days (0 for never) until</label>
+          <input type="date" name="end" class="form-control" ng-model="reminder.end">
+        </div>
+        <button type="submit" class="btn btn-success btn-lg btn-block">
+          <span class="glyphicon glyphicon-flash"></span> Submit!
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

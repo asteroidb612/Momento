@@ -1,0 +1,33 @@
+<div class="container">
+<div class="col-md-6 col-md-offset-3">
+
+	<!-- PAGE TITLE -->
+	<div class="page-header">
+		<h1 ><span class="glyphicon glyphicon-align-justify"></span> Log In </h1>
+	</div>
+
+	<!-- FORM -->
+	<form ng-submit="processForm()">
+		<!-- NAME -->
+                <div id="name-group" class="form-group"> 
+			<label>Name</label>
+			<input type="text" name="name" class="form-control" placeholder="Bruce Wayne" ng-model="formData.name">
+		</div>
+
+		<!-- SUPERHERO NAME -->
+		<div id="password-group" class="form-group" >
+			<label>Password</label>
+			<input type="password" name="password" class="form-control" placeholder="*******" ng-model="formData.password">
+		</div>
+
+		<!-- SUBMIT BUTTON -->
+		<button type="submit" class="btn btn-success btn-lg btn-block">
+			<span class="glyphicon glyphicon-flash"></span> Submit!
+		</button>
+                <button class="btn btn-primary btn-lg btn-block">
+                  <span class="glyphicon glyphicon-plus"></span> Sign Up
+                </button>
+	</form>
+
+</div>
+</div>
